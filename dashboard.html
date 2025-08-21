@@ -308,7 +308,7 @@
 
 		<!-- Espace Lauréat -->
 		<div class="cards" id="laureat">
-				<div class="card">
+			<div class="card">
 				<img src="images/jobpictures/pas encore.png" alt="Landing Page">
 				<h2>Landing Page</h2>
 				<button>Découvrir →</button>
@@ -326,11 +326,17 @@
 				<button>Découvrir →</button>
 				<div class="status rejected">❌ non vu</div>
 			</div>
+			<div class="card">
+				<img src="images/jobpictures/abonnement.png" alt="Abonnement">
+				<h2>Abonnements</h2>
+				<button>Découvrir →</button>
+				<div class="status rejected">❌ non vu</div>
+			</div>
 		</div>
 
 		<!-- Espace Boursier -->
 		<div class="cards" id="boursier">
-				<div class="card">
+			<div class="card">
 				<img src="images/jobpictures/pas encore.png" alt="Landing Page">
 				<h2>Landing Page</h2>
 				<button>Découvrir →</button>
@@ -352,7 +358,7 @@
 
 		<!-- Espace Entreprise -->
 		<div class="cards" id="entreprise">
-				<div class="card">
+			<div class="card">
 				<img src="images/jobpictures/pas encore.png" alt="Landing Page">
 				<h2>Landing Page</h2>
 				<button>Découvrir →</button>
@@ -374,7 +380,7 @@
 
 		<!-- Espace Particulier -->
 		<div class="cards" id="particulier">
-				<div class="card">
+			<div class="card">
 				<img src="images/jobpictures/pas encore.png" alt="Landing Page">
 				<h2>Landing Page</h2>
 				<button>Découvrir →</button>
@@ -396,7 +402,7 @@
 
 		<!-- Espace Admin -->
 		<div class="cards" id="admin">
-				<div class="card">
+			<div class="card">
 				<img src="images/jobpictures/pas encore.png" alt="Landing Page">
 				<h2>Landing Page</h2>
 				<button>Découvrir →</button>
@@ -414,35 +420,35 @@
 				<button>Découvrir →</button>
 				<div class="status rejected">❌ non vu</div>
 			</div>
-	</div>
+		</div>
 
-	<!-- JS -->
-	<script>
-		// Toggle du menu burger
-		function toggleMenu() {
-			document.getElementById("menu").classList.toggle("active");
-		}
+		<!-- JS -->
+		<script>
+			// Toggle du menu burger
+			function toggleMenu() {
+				document.getElementById("menu").classList.toggle("active");
+			}
 
-		// Afficher un onglet spécifique
-		function showTab(tabId, el) {
-			// Masquer toutes les sections
-			document.querySelectorAll(".cards").forEach(section => {
-				section.classList.remove("active");
-				section.style.display = "none";
-			});
+			// Afficher un onglet spécifique
+			function showTab(tabId, el) {
+				// Masquer toutes les sections
+				document.querySelectorAll(".cards").forEach(section => {
+					section.classList.remove("active");
+					section.style.display = "none";
+				});
 
-			// Afficher la section demandée
-			const targetSection = document.getElementById(tabId);
-			targetSection.classList.add("active");
-			targetSection.style.display = "grid";
+				// Afficher la section demandée
+				const targetSection = document.getElementById(tabId);
+				targetSection.classList.add("active");
+				targetSection.style.display = "grid";
 
-			// Mettre à jour les onglets visuels
-			document.querySelectorAll(".tab").forEach(tab => {
-				tab.classList.remove("active");
-			});
-			el.classList.add("active");
-		}
-	</script>
+				// Mettre à jour les onglets visuels
+				document.querySelectorAll(".tab").forEach(tab => {
+					tab.classList.remove("active");
+				});
+				el.classList.add("active");
+			}
+		</script>
 
 </body>
 
